@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="ingredients">
+            <!-- <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post"> -->
+            <!-- <form onsubmit="return handleData()" method="get" action="thanks.html"> -->
+            <form class="ingredients-form" onsubmit="handleData()" method="get" action="thanks.html">
+                <p class="title">What ingredients would you like in your burger?</p>
+                <div class="choices">
+                    <div>
+                        <input type="checkbox" name="ings" id="ings_cheese" value="Cheese"> <label
+                            for="ings_cheese">Cheese</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ings" id="ings_bacon" value="Bacon"> <label
+                            for="ings_bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ings" id="ings_onions" value="Caramelized onions"> <label
+                            for="ings_onions">Caramelized onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ings" id="ings_pickles" value="Pickles"> <label
+                            for="ings_pickles">Pickles</label>
+                    </div>
+                    <!-- <div>
+                        <input type="submit" name="submit" value="Place order" />
+                    </div> -->
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Place order" />
+                </div>
+            </form>
+    
+        </div>
+    
+        <div class="container">
+            <div class="burger">
+                <div class="top-bun bun"></div>
+                <div class="cheese"></div>
+                <div class="caramelized-onions"></div>
+                <div class="patty"></div>
+                <div class="pickles"></div>
+                <div class="bacon"></div>
+                <div class="bottom-bun bun"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
